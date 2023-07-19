@@ -1,4 +1,6 @@
 import React, {useEffect } from 'react';
+import Section1 from '../components/about-us/Section1';
+
 
 const AboutUs = () => {
     useEffect(() => {
@@ -7,7 +9,7 @@ const AboutUs = () => {
 
   return (
     <>
-    
+      <Section1 />
     </>
   )
 }

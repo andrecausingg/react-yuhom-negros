@@ -3,8 +3,6 @@ import emailIcon from '../../images/icons/envelope-solid.svg';
 import mobileIcon from '../../images/icons/mobile-solid.svg';
 import locationIcon from '../../images/icons/location-dot-solid.svg';
 
-
-
 const Section5 = () => {
   
   const socMed = [

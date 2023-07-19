@@ -27,8 +27,8 @@ const Section1 = () => {
         <div className='yot-content-space-mt-120 yot-container'>
             {/* Title */}
             <div className='yot-text-center yot-mb-48'>
-              <h1 className='yot-mb-8 yot-tc-green1'>Contact Us</h1>
-              <p>Get in Touch with Uncover Negro's Treasures</p>
+              <h1 className='yot-mb-8 yot-tc-green1' data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom" data-aos-once="true">Contact Us</h1>
+              <p data-aos="zoom-out-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">Get in Touch with Uncover Negro's Treasures</p>
             </div>
 
             {/* Grid Container */}
@@ -86,7 +86,7 @@ const Section1 = () => {
                 ))}
               </div>
 
-              <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
+              <div data-aos="fade-down" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">
                 <div className='yot-row-l yot-mb-8'>
                     <div className='yot-form-group yot-col-50'>
                         <label htmlFor="firstName">First Name</label>
