@@ -21,19 +21,19 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: '/blogs',
+                path: '/react-yuhom-negros/blogs',
                 element: <Blogs />
             },
             {
-                path: '/gallery',
+                path: '/react-yuhom-negros/gallery',
                 element: <Gallery />
             },
             {
-                path: '/about-us',
+                path: '/react-yuhom-negros/about-us',
                 element: <AboutUs />
             },
             {
-                path: '/contact-us',
+                path: '/react-yuhom-negros/contact-us',
                 element: <ContactUs />
             },
         ]

@@ -38,7 +38,7 @@ const Header = () => {
   // Update active link based on current URL
   useEffect(() => {
     const path = location.pathname;
-    setActiveLink(path === '/' ? 'home' : path.slice(1));
+    setActiveLink(path);
   }, [location]);
 
   return (
@@ -58,9 +58,8 @@ const Header = () => {
             {/* Home */}
             <Link
               to="/react-yuhom-negros/"
-              className={activeLink === 'home' ? 'yot-active-bg-green1' : ''}
+              className={`yot-nav-link ${activeLink === '/react-yuhom-negros/' ? 'yot-active-bg-green1' : ''}`}
               onClick={() => {
-                setActiveLink('home');
                 handleLinkClick();
               }}
             >
@@ -69,22 +68,20 @@ const Header = () => {
 
             {/* Blogs */}
             <Link
-              to="/blogs"
-              className={activeLink === 'blogs' ? 'yot-active-bg-green1' : ''}
+              to="/react-yuhom-negros/blogs"
+              className={`yot-nav-link ${activeLink === '/react-yuhom-negros/blogs' ? 'yot-active-bg-green1' : ''}`}
               onClick={() => {
-                setActiveLink('blogs');
                 handleLinkClick();
               }}
             >
               Blogs
             </Link>
 
-            {/* Look Book */}
+            {/* Gallery */}
             <Link
-              to="/gallery"
-              className={activeLink === 'gallery' ? 'yot-active-bg-green1' : ''}
+              to="/react-yuhom-negros/gallery"
+              className={`yot-nav-link ${activeLink === '/react-yuhom-negros/gallery' ? 'yot-active-bg-green1' : ''}`}
               onClick={() => {
-                setActiveLink('gallery');
                 handleLinkClick();
               }}
             >
@@ -93,10 +90,9 @@ const Header = () => {
 
             {/* About Us */}
             <Link
-              to="/about-us"
-              className={activeLink === 'about-us' ? 'yot-active-bg-green1' : ''}
+              to="/react-yuhom-negros/about-us"
+              className={`yot-nav-link ${activeLink === '/react-yuhom-negros/about-us' ? 'yot-active-bg-green1' : ''}`}
               onClick={() => {
-                setActiveLink('about-us');
                 handleLinkClick();
               }}
             >
@@ -105,10 +101,9 @@ const Header = () => {
 
             {/* Contact Us */}
             <Link
-              to="/contact-us"
-              className={activeLink === 'contact-us' ? 'yot-active-bg-green1' : ''}
+              to="/react-yuhom-negros/contact-us"
+              className={`yot-nav-link ${activeLink === '/react-yuhom-negros/contact-us' ? 'yot-active-bg-green1' : ''}`}
               onClick={() => {
-                setActiveLink('contact-us');
                 handleLinkClick();
               }}
             >
@@ -117,7 +112,7 @@ const Header = () => {
           </div>
 
           {/* <!-- Hamburger --> */}
-          <div 
+          <div
             className={`yot-hamburger yot-hide-for-large-laptop-up ${hamburgerOpen ? "yot-hamburger-open" : ""}`}
             onClick={handleClickHamburgerOpen}
           >
