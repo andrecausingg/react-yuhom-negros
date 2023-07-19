@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         element: <GuestLayout />,
         children:[
             {
-                path: '/',
+                path: '/react-yuhom-negros/',
                 element: <Home />
             },
             {

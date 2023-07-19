@@ -57,7 +57,7 @@ const Header = () => {
           <div className="yot-flex yot-nav-active yot-hide-for-large-laptop-down">
             {/* Home */}
             <Link
-              to="/"
+              to="/react-yuhom-negros/"
               className={activeLink === 'home' ? 'yot-active-bg-green1' : ''}
               onClick={() => {
                 setActiveLink('home');

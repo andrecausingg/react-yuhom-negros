@@ -48,7 +48,7 @@ const NavMobileOverlay = ({ onClose }) => {
         <div className="yot-flex yot-flex-fd-c yot-text-fs-xxl yot-nav-active-mobile">
           {/* Home */}
           <Link
-            to="/"
+            to="/react-yuhom-negros/"
             style={{ overFlow: "hidden" }}
             onClick={() => setActiveLink('home')}
           >
