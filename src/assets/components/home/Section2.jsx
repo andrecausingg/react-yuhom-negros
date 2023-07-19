@@ -32,7 +32,7 @@ const Section2 = () => {
   return (
     <>
       {/* Container */}
-      <div className="yot-container yot-content-space-mt-120">
+      <div className="yot-container yot-content-space-mt-120" style={{overflow:'hidden'}}>
         {/* Title */}
         <div className="yot-mb-24" data-aos="fade-right" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">
           <h1 className="yot-tc-green1">Recent Blog Post</h1>

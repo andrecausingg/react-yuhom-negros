@@ -20,7 +20,7 @@ const Section5 = () => {
 
   return (
     <>
-    <div className="yot-pa-16 yot-content-space-mt-120 yot-container">
+    <div className="yot-pa-16 yot-content-space-mt-120 yot-container" style={{overflow:'hidden'}}>
         {/* Grid Container */}
         <div className='grid-container-1csm-2cl' style={{alignItems:'center'}}>
           {/* Contact Information */}

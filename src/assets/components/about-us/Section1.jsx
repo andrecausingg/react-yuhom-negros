@@ -4,7 +4,7 @@ import image8 from '../../images/upload/images8.jpg';
 const Section1 = () => {
   return (
     <>
-          <div className='yot-content-space-mt-120 yot-container'>
+          <div className='yot-content-space-mt-120 yot-container' style={{overflow:'hidden'}}>
             {/* Title */}
             <div className='yot-text-center yot-mb-48'>
               <h1 className='yot-resize-font-64 yot-mb-8 yot-tc-green1' data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom" data-aos-once="true">About Us</h1>

@@ -4,7 +4,7 @@ import image6 from '../../images/upload/images6.jpg';
 const Section3 = () => {
   return (
     <>
-    <div className="yot-pa-16 yot-content-space-mt-120 yot-container">
+    <div className="yot-pa-16 yot-content-space-mt-120 yot-container" style={{overflow:'hidden'}}>
         {/* Title */}
         <div className="yot-mb-16">
             <h1 className="yot-tc-green1">Latest Gallery</h1>
