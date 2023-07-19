@@ -1,7 +1,3 @@
-import image4 from '../../images/upload/images4.jpg';
-import image5 from '../../images/upload/images5.jpg';
-import image6 from '../../images/upload/images6.jpg';
-
 const Section1 = () => {
   return (
     <>

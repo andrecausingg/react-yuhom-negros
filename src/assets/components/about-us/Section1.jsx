@@ -7,8 +7,8 @@ const Section1 = () => {
           <div className='yot-content-space-mt-120 yot-container'>
             {/* Title */}
             <div className='yot-text-center yot-mb-48'>
-              <h1 className='yot-mb-8 yot-tc-green1' data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom" data-aos-once="true">About Us</h1>
-              <p data-aos="zoom-out-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">Unveiling Negro's Hidden Treasures: Embark on a Journey of Discovery</p>
+              <h1 className='yot-resize-font-64 yot-mb-8 yot-tc-green1' data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-anchor-placement="top-bottom" data-aos-once="true">About Us</h1>
+              <h4 data-aos="zoom-out-up" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">Unveiling Negro's Hidden Treasures: Embark on a Journey of Discovery</h4>
             </div>
 
             {/* Grid Container */}

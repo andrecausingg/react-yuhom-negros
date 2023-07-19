@@ -1,4 +1,5 @@
 import React, {useEffect } from 'react';
+import Section1 from '../components/gallery/Section1';
 
 const Gallery = () => {
     useEffect(() => {
@@ -7,7 +8,7 @@ const Gallery = () => {
 
   return (
     <>
-    
+      <Section1 />
     </>
   )
 }
