@@ -8,7 +8,7 @@ const WaterMark = () => {
             <div className="yot-pa-16 yot-flex yot-flex-fd-c-ai-c">
               <a href="https://andrecausing.com/" target="_blank" rel="noopener noreferrer" className="yot-text-center yot-cursor-pointer">
                 <img src={andreCausingLogo} alt="" width="36"/>
-                <h5>Andre D. Causing</h5>
+                <h5>Powered by: Andre D. Causing</h5>
                 <h6>Full Stack Web Developer</h6>
                 <span className='yot-text-fs-t'>Web Designer, Computer Technician, Graphic Artist and Video Editor.</span>
               </a>

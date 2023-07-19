@@ -34,7 +34,7 @@ const Section2 = () => {
       {/* Container */}
       <div className="yot-container yot-content-space-mt-120">
         {/* Title */}
-        <div className="yot-mb-24" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+        <div className="yot-mb-24" data-aos="fade-right" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">
           <h1 className="yot-tc-green1">Recent Blog Post</h1>
           <p>
             In our recent blog post, we explore a compelling topic that has been generating buzz in the industry. We delve into the nuances and implications of this subject, shedding light on its significance and providing valuable insights for our readers.
@@ -44,7 +44,7 @@ const Section2 = () => {
         {/* Grid Container */}
         <div className="grid-container-1csm-2cm-3cl">
           {images.map((image, index) => (
-            <div key={index} style={{ overflow: 'hidden' }} data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+            <div key={index} style={{ overflow: 'hidden' }} data-aos="fade-down-right" data-aos-delay="600" data-aos-duration="600" data-aos-easing="ease-in-out" data-aos-once="true">
               <img style={{ borderRadius: '10px', width: '100%'}} src={image.image} alt=""/>
               <div>
                 <h4>{image.title}</h4>

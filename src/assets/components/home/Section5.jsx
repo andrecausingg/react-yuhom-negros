@@ -26,7 +26,7 @@ const Section5 = () => {
         {/* Grid Container */}
         <div className='grid-container-1csm-2cl' style={{alignItems:'center'}}>
           {/* Contact Information */}
-          <div data-aos="flip-left" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+          <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
             <h1 className='yot-tc-green yot-mb-16'>Contact Information</h1>
 
             {/* SocMed */}
@@ -78,7 +78,7 @@ const Section5 = () => {
             ))}
           </div>
 
-          <div data-aos="flip-right" data-aos-delay="500" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+          <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className='yot-row-l yot-mb-8'>
                 <div className='yot-form-group yot-col-50'>
                     <label htmlFor="firstName">First Name</label>

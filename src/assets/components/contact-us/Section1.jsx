@@ -1,74 +1,128 @@
-import React from 'react'
+
 
 // Images Icon
-import envelopeIcon from '../../images/icons/envelope-solid.svg';
+import facebookIcon from '../../images/icons/square-facebook.svg';
+import emailIcon from '../../images/icons/envelope-solid.svg';
+import mobileIcon from '../../images/icons/mobile-solid.svg';
+import locationIcon from '../../images/icons/location-dot-solid.svg';
+
 
 const Section1 = () => {
+
+  const socMed = [
+    { name: 'Facebook', path: facebookIcon, value: 'https://web.facebook.com/yuhomsanegros' }
+  ];
+  
+  const contact = [
+    { name: 'Mobile', path: mobileIcon, value: '09672844016' },
+    { name: 'Email', path: emailIcon, value: 'dcsmktgservices@gmail.com' }
+  ];
+  
+  const location = [
+    { name: 'Location', path: locationIcon, value: 'Negros, Occidental Philippines'}
+  ];
+
   return (
     <>
         <div className='yot-content-space-mt-120 yot-container'>
             {/* Title */}
             <div className='yot-text-center yot-mb-48'>
-              <h1 className='yot-mb-8'>Contact Us</h1>
-              <p>Please feel free to contact us for any inquiries or assistance you may require.</p>
+              <h1 className='yot-mb-8 yot-tc-green1'>Contact Us</h1>
+              <p>Get in Touch with Uncover Negro's Treasures</p>
             </div>
 
-            <div className='yot-row yot-bg-white yot-pa-16 form-width-m-700' style={{margin:"auto"}}>
-              <div className='yot-row-m yot-mb-8'>
-                  {/* <!-- First Name --> */}
-                  <div className="yot-form-group yot-col-50">
-                      <input
-                        className="yot-form-input"
-                        type="email"
-                        required
-                        placeholder='First Name'
-                      />
-                  </div>
+            {/* Grid Container */}
+            <div className='grid-container-1csm-2cl' style={{alignItems:'center'}}>
+              {/* Contact Information */}
+              <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
+                <h1 className='yot-tc-green yot-mb-16'>Contact Information</h1>
 
-                    {/* <!-- Last Name --> */}
-                    <div className="yot-form-group yot-col-50">
-                      <input
-                        className="yot-form-input"
-                        type="email"
-                        required
-                        placeholder='Last Name'
-                      />
+                {/* SocMed */}
+                {socMed.map((item, index) => (
+                  <div
+                    key={index}
+                    className="yot-flex yot-flex-ai-c yot-mb-8"
+                  >
+                    <img
+                      className="yot-mb-4 yot-cursor-pointer"
+                      src={item.path}
+                      style={{ width: "30px" }}
+                      alt={item.name}
+                    />
+                    <span className='yot-ml-4'>{item.value}</span>
                   </div>
+                ))}
+
+                {/* Contact */}
+                {contact.map((item, index) => (
+                  <div
+                    key={index}
+                    className="yot-flex yot-flex-ai-c yot-mb-8"
+                  >
+                    <img
+                      className="yot-mb-4 yot-cursor-pointer"
+                      src={item.path}
+                      style={{ width: "30px" }}
+                      alt={item.name}
+                    />
+                    <span className='yot-ml-4'>{item.value}</span>
+                  </div>
+                ))}
+
+                {/* Location */}
+                {location.map((item, index) => (
+                  <div
+                    key={index}
+                    className="yot-flex yot-flex-ai-c"
+                  >
+                    <img
+                      className="yot-mb-4 yot-cursor-pointer yot-mb-8"
+                      src={item.path}
+                      style={{ width: "30px" }}
+                      alt={item.name}
+                    />
+                    <span className='yot-ml-4'>{item.value}</span>
+                  </div>
+                ))}
               </div>
 
-              <div className='yot-row-m yot-mb-8'>
-                  {/* <!-- Email --> */}
-                  <div className="yot-form-group yot-form-group-container yot-col-100">
-                      <input
-                        className="yot-form-input"
-                        type="email"
-                        style={{paddingLeft: '38px'}}
-                        required
-                        placeholder='Email'
-                      />
-                      <img className="yot-form-group-icon-left" src={envelopeIcon} alt="" width="36px" />
-                  </div>
-              </div>
+              <div data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
+                <div className='yot-row-l yot-mb-8'>
+                    <div className='yot-form-group yot-col-50'>
+                        <label htmlFor="firstName">First Name</label>
+                        <input className='yot-form-input-bb' type="text" name="" id="" />
+                    </div>
 
-              {/* Message */}
-              <div className='yot-row-m'>
-                <div className='yot-col-100'>
-                  <textarea 
-                    className='yot-form-input'
-                    style={{resize: "none"}} 
-                    cols="30" 
-                    rows="10" 
-                    required 
-                    placeholder='Message'
-                  />
+                    <div className='yot-form-group yot-col-50'>
+                        <label htmlFor="Last Name">Last Name</label>
+                        <input className='yot-form-input-bb' type="text" name="" id="" />
+                    </div>
+                </div>
+
+                <div className='yot-row-l yot-mb-8'>
+                    <div className='yot-form-group yot-col-50'>
+                        <label htmlFor="email">Email</label>
+                        <input className='yot-form-input-bb' type="text" name="" id="" />
+                    </div>
+
+                    <div className='yot-form-group yot-col-50'>
+                        <label htmlFor="phone">Phone</label>
+                        <input className='yot-form-input-bb' type="text" name="" id="" />
+                    </div>
+                </div>
+
+                <div className='yot-mb-8'>
+                    <div className='yot-text-center'>
+                      <label htmlFor="message">Message</label>
+                    </div>
+                    <input className='yot-form-input-bb' type="text" name="" id="" />
+                </div>
+                
+                <div className='yot-text-center'>
+                  <button className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">Submit</button>
                 </div>
               </div>
-              
-              {/* <!-- Submit --> */}
-              <div className="yot-text-center">
-                <button className="yot-btn-black2" style={{border: "1px solid black"}}>Sign Up</button>
-              </div>
-          </div>
+            </div>
         </div>
     </>
   )

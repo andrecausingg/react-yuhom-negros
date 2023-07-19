@@ -15,19 +15,24 @@ const Header = () => {
   // Body OverFlow Hidden
   useEffect(() => {
     if (hamburgerOpen) {
-      document.body.style.overflow = 'hidden'; // Apply the 'overflow: hidden' style to the body
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = ''; // Reset the style when the login is closed
+      document.body.style.overflow = '';
     }
 
     return () => {
-      document.body.style.overflow = ''; // Reset the style when the component unmounts
+      document.body.style.overflow = '';
     };
   }, [hamburgerOpen]);
 
   // Hamburger Open
   const handleClickHamburgerOpen = () => {
     setHamburgerOpen(!hamburgerOpen);
+  };
+
+  // Scroll to top when link is clicked
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   // Update active link based on current URL
@@ -54,7 +59,10 @@ const Header = () => {
             <Link
               to="/"
               className={activeLink === 'home' ? 'yot-active-bg-green1' : ''}
-              onClick={() => setActiveLink('home')}
+              onClick={() => {
+                setActiveLink('home');
+                handleLinkClick();
+              }}
             >
               Home
             </Link>
@@ -63,7 +71,10 @@ const Header = () => {
             <Link
               to="/blogs"
               className={activeLink === 'blogs' ? 'yot-active-bg-green1' : ''}
-              onClick={() => setActiveLink('blogs')}
+              onClick={() => {
+                setActiveLink('blogs');
+                handleLinkClick();
+              }}
             >
               Blogs
             </Link>
@@ -72,32 +83,37 @@ const Header = () => {
             <Link
               to="/gallery"
               className={activeLink === 'gallery' ? 'yot-active-bg-green1' : ''}
-              onClick={() => setActiveLink('gallery')}
+              onClick={() => {
+                setActiveLink('gallery');
+                handleLinkClick();
+              }}
             >
               Gallery
             </Link>
 
-            
             {/* About Us */}
             <Link
               to="/about-us"
               className={activeLink === 'about-us' ? 'yot-active-bg-green1' : ''}
-              onClick={() => setActiveLink('about-us')}
+              onClick={() => {
+                setActiveLink('about-us');
+                handleLinkClick();
+              }}
             >
               About Us
             </Link>
-
 
             {/* Contact Us */}
             <Link
               to="/contact-us"
               className={activeLink === 'contact-us' ? 'yot-active-bg-green1' : ''}
-              onClick={() => setActiveLink('contact-us')}
+              onClick={() => {
+                setActiveLink('contact-us');
+                handleLinkClick();
+              }}
             >
               Contact Us
             </Link>
-
-
           </div>
 
           {/* <!-- Hamburger --> */}

@@ -12,16 +12,16 @@ const Section3 = () => {
         {/* Grid Container */}
         <div className='yot-row-xl yot-flex-ai-c-jc-sb'>
 
-          <div className='yot-col-50' data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+          <div className='yot-col-50' data-aos="fade-right" data-aos-delay="800" data-aos-duration="800" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className='yot-row-m'>
               <img style={{ borderRadius: '10px', width:'50%'}} src={image5} alt=""/>
               <img style={{ borderRadius: '10px', width:'50%'}} src={image6} alt=""/>
             </div>
           </div>
 
-          <div className='yot-pa-16 yot-col-50' data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
+          <div className='yot-pa-16 yot-col-50' data-aos="fade-left" data-aos-delay="700" data-aos-duration="700" data-aos-easing="ease-in-out" data-aos-once="true">
             <h3>Explore more on our gallery</h3>
-            <p>The blog post begins by examining the emerging technologies that are 
+            <p className='yot-text-fs-xsm' >The blog post begins by examining the emerging technologies that are 
 revolutionizing the industry landscape. We explore how these 
 advancements are reshaping traditional practices and opening up new 
 opportunities for businessesand professionals alike. Through in-depth 
