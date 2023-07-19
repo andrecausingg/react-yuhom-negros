@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import image5 from '../../images/upload/images5.jpg';
 import image6 from '../../images/upload/images6.jpg';
 
@@ -27,7 +29,7 @@ advancements are reshaping traditional practices and opening up new
 opportunities for businessesand professionals alike. Through in-depth 
 analysis and real-life examples, we highlight the transformative power of 
 these technologies and the impact they have on various sectors.</p>
-            <button className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">View More</button>
+            <Link to="/react-yuhom-negros/gallery" className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">View More</Link>
           </div>
         </div>
     </div>

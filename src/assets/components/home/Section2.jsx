@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom';
+
 import image1 from '../../images/upload/images1.jpg';
 import image2 from '../../images/upload/images2.jpg';
 import image3 from '../../images/upload/images3.jpg';
-
 
 const images = [
   {
@@ -39,7 +40,7 @@ const Section2 = () => {
           <p>
             In our recent blog post, we explore a compelling topic that has been generating buzz in the industry. We delve into the nuances and implications of this subject, shedding light on its significance and providing valuable insights for our readers.
           </p>
-          <button className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">See More</button>
+          <Link to="/react-yuhom-negros/blogs" className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">See More</Link>
         </div>
         {/* Grid Container */}
         <div className="grid-container-1csm-2cm-3cl">
@@ -51,7 +52,6 @@ const Section2 = () => {
                 <span className="yot-text-fs-t">{image.date}</span>
               </div>
               <p className="yot-text-fs-xsm">{image.description}</p>
-              <button className="yot-btn-green1 yot-btn-shape-round yot-mt-8 yot-text-fs-xsm">See More</button>
             </div>
           ))}
         </div>
