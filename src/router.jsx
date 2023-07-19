@@ -5,15 +5,11 @@ import GuestLayout from "./assets/components/GuestLayout";
 
 // Views
 import Home from "./assets/views/Home";
-import NotFound from "./assets/views/NotFound";
-import BaybayinTees from "./assets/views/BaybayinTees";
-import DefaultLayout from "./assets/components/DefaultLayout";
-import Faqs from "./assets/views/Faqs";
+import Blogs from "./assets/views/Blogs";
+import Gallery from "./assets/views/Gallery";
+import AboutUs from "./assets/views/AboutUs";
 import ContactUs from "./assets/views/ContactUs";
-import LookBook from "./assets/views/LookBook";
-import Testimonial from "./assets/views/Testimonial";
-import EmailVerificationPage from "./assets/views/EmailVerificationPage";
-import UpdatePasswordPage from "./assets/views/UpdatePasswordPage";
+import NotFound from "./assets/views/NotFound";
 
 const router = createBrowserRouter([
     {
@@ -25,38 +21,22 @@ const router = createBrowserRouter([
                 element: <Home />
             },
             {
-                path: '/baybayin-tees',
-                element: <BaybayinTees />
+                path: '/blogs',
+                element: <Blogs />
             },
             {
-                path: '/testimonial',
-                element: <Testimonial />
+                path: '/gallery',
+                element: <Gallery />
             },
             {
-                path: '/look-book',
-                element: <LookBook />
+                path: '/about-us',
+                element: <AboutUs />
             },
             {
                 path: '/contact-us',
                 element: <ContactUs />
             },
-            {
-                path: '/faqs',
-                element: <Faqs />
-            },
         ]
-    },
-    {
-        path: '/email-verification',
-        element: <EmailVerificationPage />
-    },
-    {
-        path: '/update-password',
-        element: <UpdatePasswordPage />
-    },
-    {
-        path:'/admin',
-        element: <DefaultLayout />
     },
     {
         path: '*',

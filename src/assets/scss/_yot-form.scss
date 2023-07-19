@@ -103,6 +103,20 @@
     border: 2px solid $yot-orange;
 }
 
+.yot-form-input-bb{
+    width: 100%;
+    padding: 12px 16px;
+    box-sizing: border-box;
+    border: none;
+    font-size: 16px;
+    border-bottom: 1px solid $yot-green1;
+}
+
+.yot-form-input-bb:focus{
+    outline: none !important;
+    border-bottom: 1px solid $yot-green1;
+}
+
 
 // Select Css
 .yot-form-select{

@@ -1,4 +1,5 @@
-import { Link, useLocation } from 'react-router-dom';
+// React
+import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 // Images
@@ -8,21 +9,25 @@ import emailIcon from '../images/icons/envelope-solid.svg';
 import mobileIcon from '../images/icons/mobile-solid.svg';
 import locationIcon from '../images/icons/location-dot-solid.svg';
 
+// Components
+import WaterMark from '../components/z-etc/WaterMark';
+
+
 
 const Footer = () => {
     const [activeLink, setActiveLink] = useState('');
 
     const socMed = [
-    { name: 'Facebook', path: facebookIcon, value: 'https://web.facebook.com/yuhomsanegros' }
+      { name: 'Facebook', path: facebookIcon, value: 'https://web.facebook.com/yuhomsanegros' }
     ];
     
     const contact = [
-    { name: 'Mobile', path: mobileIcon, value: '09672844016' },
-    { name: 'Email', path: emailIcon, value: 'dcsmktgservices@gmail.com' }
+      { name: 'Mobile', path: mobileIcon, value: '09672844016' },
+      { name: 'Email', path: emailIcon, value: 'dcsmktgservices@gmail.com' }
     ];
     
     const locationData = [
-    { name: 'Location', path: locationIcon, value: 'Negros, Occidental Philippines'}
+      { name: 'Location', path: locationIcon, value: 'Negros, Occidental Philippines'}
     ];
 
       
@@ -146,8 +151,9 @@ const Footer = () => {
               </div>
             ))}
           </div>
-
         </nav>
+
+        <WaterMark />
       </footer>
     </>
   );

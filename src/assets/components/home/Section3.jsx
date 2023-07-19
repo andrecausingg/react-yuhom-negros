@@ -1,6 +1,7 @@
+import image5 from '../../images/upload/images5.jpg';
 import image6 from '../../images/upload/images6.jpg';
 
-const HomeSection3 = () => {
+const Section3 = () => {
   return (
     <>
     <div className="yot-pa-16 yot-content-space-mt-120 yot-container">
@@ -11,14 +12,14 @@ const HomeSection3 = () => {
         {/* Grid Container */}
         <div className='yot-row-xl yot-flex-ai-c-jc-sb'>
 
-          <div className='yot-col-50'>
+          <div className='yot-col-50' data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
             <div className='yot-row-m'>
-              <img style={{ borderRadius: '10px', width:'100%'}} src={image6} alt=""/>
-              <img style={{ borderRadius: '10px', width:'100%'}} src={image6} alt=""/>
+              <img style={{ borderRadius: '10px', width:'50%'}} src={image5} alt=""/>
+              <img style={{ borderRadius: '10px', width:'50%'}} src={image6} alt=""/>
             </div>
           </div>
 
-          <div className='yot-pa-16 yot-col-50'>
+          <div className='yot-pa-16 yot-col-50' data-aos="fade-left" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
             <h3>Explore more on our gallery</h3>
             <p>The blog post begins by examining the emerging technologies that are 
 revolutionizing the industry landscape. We explore how these 
@@ -34,4 +35,4 @@ these technologies and the impact they have on various sectors.</p>
   );
 }
 
-export default HomeSection3
+export default Section3

@@ -1,9 +1,7 @@
 import image1 from '../../images/upload/images1.jpg';
 import image2 from '../../images/upload/images2.jpg';
 import image3 from '../../images/upload/images3.jpg';
-import image4 from '../../images/upload/images4.jpg';
-import image5 from '../../images/upload/images5.jpg';
-import image6 from '../../images/upload/images6.jpg';
+
 
 const images = [
   {
@@ -30,13 +28,13 @@ const images = [
   // Add more image objects here with the corresponding data
 ];
 
-const HomeSection2 = () => {
+const Section2 = () => {
   return (
     <>
       {/* Container */}
       <div className="yot-container yot-content-space-mt-120">
         {/* Title */}
-        <div className="yot-mb-24">
+        <div className="yot-mb-24" data-aos="fade-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
           <h1 className="yot-tc-green1">Recent Blog Post</h1>
           <p>
             In our recent blog post, we explore a compelling topic that has been generating buzz in the industry. We delve into the nuances and implications of this subject, shedding light on its significance and providing valuable insights for our readers.
@@ -46,7 +44,7 @@ const HomeSection2 = () => {
         {/* Grid Container */}
         <div className="grid-container-1csm-2cm-3cl">
           {images.map((image, index) => (
-            <div key={index} style={{ overflow: 'hidden' }}>
+            <div key={index} style={{ overflow: 'hidden' }} data-aos="fade-down-right" data-aos-delay="300" data-aos-duration="500" data-aos-easing="ease-in-out" data-aos-once="true">
               <img style={{ borderRadius: '10px', width: '100%'}} src={image.image} alt=""/>
               <div>
                 <h4>{image.title}</h4>
@@ -62,4 +60,4 @@ const HomeSection2 = () => {
   );
 };
 
-export default HomeSection2;
+export default Section2;

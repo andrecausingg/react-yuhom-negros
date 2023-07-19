@@ -67,6 +67,11 @@
     .grid-container-1csm-2cm-4cl{
         grid-template-columns: auto auto auto auto!important;
     }
+
+    .grid-container-1csm-2cl{
+        grid-template-columns: auto auto!important;
+    }
+
     // Don't Remove Top
     .crud-select-tag{
         width: 25% !important;

@@ -62,7 +62,7 @@ const Header = () => {
             {/* Blogs */}
             <Link
               to="/blogs"
-              className={activeLink === 'blogs' ? 'yot-active-bb-white' : ''}
+              className={activeLink === 'blogs' ? 'yot-active-bg-green1' : ''}
               onClick={() => setActiveLink('blogs')}
             >
               Blogs
@@ -71,7 +71,7 @@ const Header = () => {
             {/* Look Book */}
             <Link
               to="/gallery"
-              className={activeLink === 'gallery' ? 'yot-active-bb-white' : ''}
+              className={activeLink === 'gallery' ? 'yot-active-bg-green1' : ''}
               onClick={() => setActiveLink('gallery')}
             >
               Gallery
@@ -81,7 +81,7 @@ const Header = () => {
             {/* About Us */}
             <Link
               to="/about-us"
-              className={activeLink === 'about-us' ? 'yot-active-bb-white' : ''}
+              className={activeLink === 'about-us' ? 'yot-active-bg-green1' : ''}
               onClick={() => setActiveLink('about-us')}
             >
               About Us
@@ -91,7 +91,7 @@ const Header = () => {
             {/* Contact Us */}
             <Link
               to="/contact-us"
-              className={activeLink === 'contact-us' ? 'yot-active-bb-white' : ''}
+              className={activeLink === 'contact-us' ? 'yot-active-bg-green1' : ''}
               onClick={() => setActiveLink('contact-us')}
             >
               Contact Us
