@@ -2,11 +2,24 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/react-yuhom-negros/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
-    <script type="module" crossorigin src="/react-yuhom-negros/assets/index-3b6c1cd6.js"></script>
-    <link rel="stylesheet" href="/react-yuhom-negros/assets/index-d526a0c5.css">
+    <title>Yuhom Negros</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,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">
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+    <script type="module" crossorigin src="/react-yuhom-negros/assets/index-80de9de6.js"></script>
+    <link rel="stylesheet" href="/react-yuhom-negros/assets/index-299e3282.css">
   </head>
   <body>
     <div id="root"></div>
